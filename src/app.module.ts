@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { CategoryModule } from './category/category.module';
-import { TansactionModule } from './tansaction/tansaction.module';
+import { TransactionModule } from './transaction/transaction.module';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
@@ -13,7 +13,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     UserModule,
     AuthModule,
     CategoryModule,
-    TansactionModule,
+    TransactionModule,
     ConfigModule.forRoot({ isGlobal: true }),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
